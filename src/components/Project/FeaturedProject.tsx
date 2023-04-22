@@ -30,7 +30,12 @@ const FeaturedProject: FC<FeatureProject> = ({
                     <FramerImage src={img} alt={title}
                                  className={'w-full'}
                                  whileHover={{ scale: 1.05 }}
-                                 transition={{ duration: 0.2 }} />
+                                 transition={{ duration: 0.2 }}
+                                 priority
+                                 sizes={"(max-width:768px) 100vw " +
+                                     "(max-width:1200px) 50vw " +
+                                     "50vw"}
+                    />
                 </Link>
                 :
                 <div className={'w-full flex-1 cursor-pointer overflow-hidden rounded-lg'}>

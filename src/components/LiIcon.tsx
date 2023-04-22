@@ -9,7 +9,7 @@ const LiIcon:FC<Props> = ({reference}) => {
 
     const {scrollYProgress } = useScroll({
         target: reference,
-        offset: ["center end", "center center"],
+        offset: ["start end", "start center"],
         layoutEffect: false
     });
 

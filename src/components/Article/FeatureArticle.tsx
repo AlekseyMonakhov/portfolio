@@ -22,6 +22,10 @@ const FeatureArticle: FC<FeatureArticleType> = ({ img, link, title, time, type, 
                     className={'w-full'}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
+                    priority
+                    sizes={"(max-width:768px) 100vw " +
+                        "(max-width:1200px) 50vw " +
+                        "50vw"}
                 />
             </Link>
             <Link href={link} target={'_blank'}>
