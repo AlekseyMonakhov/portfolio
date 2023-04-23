@@ -151,7 +151,7 @@ const NavBar = () => {
                                 <TwitterIcon className={''} />
                             </motion.a>
                             <motion.a className={'w-6'}
-                                      href={'https://github.com/'}
+                                      href={'https://github.com/AlekseyMonakhov'}
                                       target={'_blank'}
                                       whileHover={{ y: -2 }}
                                       whileTap={{ scale: 0.9 }}
@@ -160,7 +160,7 @@ const NavBar = () => {
                                     className={'text-base bg-light dark:bg-dark rounded-full'} />
                             </motion.a>
                             <motion.a className={'w-6'}
-                                      href={'https://linkedin.com/'}
+                                      href={'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/'}
                                       target={'_blank'}
                                       whileHover={{ y: -2 }}
                                       whileTap={{ scale: 0.9 }}
