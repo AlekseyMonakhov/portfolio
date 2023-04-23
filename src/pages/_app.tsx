@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({
