@@ -6,6 +6,7 @@ import FeatureArticle from '@/components/Article/FeatureArticle'
 import { ArticleType, ArticleTypes, FeatureArticleType } from '@/types'
 import { getArticles } from '@/config/helpers'
 import Article from '@/components/Article/Article'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const Articles = () => {
     console.log()
@@ -16,12 +17,13 @@ const Articles = () => {
                 <meta name={'articles page'}
                       content={'js/ts developer, front-end, back-end developer, full-stack developer'} />
             </Head>
+            <TransitionEffect/>
             <main
                 className={'w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'}>
                 <Layout className={'pt-16'}>
-                    <AnimatedText text={'Words Can Change The World!'} className={'mb-16 '} />
+                    <AnimatedText text={'Words Can Change The World!'} className={'mb-16 lg:!text-7xl sm:!mb-8 sm:!text-6xl xs:!text-4xl'} />
 
-                    <ul className={'grid grid-cols-2 gap-16'}>
+                    <ul className={'grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16'}>
                         {getArticles<FeatureArticleType>(ArticleTypes.FEATURE_ARTICLE)
                             .map((article, index) => (
                                 <FeatureArticle {...article}

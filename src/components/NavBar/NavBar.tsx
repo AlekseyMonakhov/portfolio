@@ -20,7 +20,7 @@ import CustomMobileLink from '@/components/NavBar/CustomMobileLink'
 const NavBar = () => {
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false)
-    console.log(isOpen)
+
     const handleClick = () => {
         setIsOpen((prev) => !prev)
     }
@@ -31,7 +31,7 @@ const NavBar = () => {
 
     return (
         <header
-            className={'w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative'}
+            className={'w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'}
         >
 
             <button
@@ -115,6 +115,7 @@ const NavBar = () => {
                 {isOpen ?
                     <motion.div
                         initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
+                        transition={{ ease: 'easeInOut', type: 'spring', stiffness: 100 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0, opacity: 0 }}
                         className={'min-w-[70vw] flex flex-col justify-between z-30 ' +

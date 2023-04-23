@@ -7,7 +7,7 @@ type Props = { href: string, title: string, className?: string, toggle:()=>void 
 
 const CustomMobileLink: FC<Props> = ({ title, href, className, toggle }) => {
     const { asPath, push } = useRouter()
-    console.log("render")
+
     const handleClick = async () => {
         toggle();
         await push(href)

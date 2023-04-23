@@ -59,7 +59,7 @@ const MovingImg: FC<Props> = ({ img, title, link }) => {
                 ref={imgRef}
                 src={img}
                 alt={title}
-                className={'z-10 w-96 h-auto hidden absolute rounded-lg'} />
+                className={'z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden'} />
         </Link>
     )
 }

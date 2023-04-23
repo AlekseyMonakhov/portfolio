@@ -10,7 +10,7 @@ const EducationDetails: FC<EducationItem> = ({  info, time, type, diplomaLink, s
 
     return (
         <li ref={liRef}
-            className={'my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'}>
+            className={'my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'}>
             <LiIcon reference={liRef} />
             <motion.div
                 initial={{ y: 50 }}
@@ -21,17 +21,17 @@ const EducationDetails: FC<EducationItem> = ({  info, time, type, diplomaLink, s
                     type: 'spring',
                 }}
             >
-                <h3 className={'capitalize font-bold text-2xl'}>
+                <h3 className={'capitalize font-bold text-2xl sm:text-xl xs:text-lg'}>
                     {type}&nbsp;
                     <a
                         className={'text-primary capitalize dark:text-primaryDark'} target={'_blank'}
                         href={diplomaLink}>@DiplomaLink
                     </a>
                 </h3>
-                <span className={'capitalize font-medium text-dark/75 dark:text-light/75'}>
+                <span className={'capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'}>
                     {time} | {schoolName}
                 </span>
-                <p className={'font-medium w-full'}>
+                <p className={'font-medium w-full md:text-sm'}>
                     {info}
                 </p>
             </motion.div>
