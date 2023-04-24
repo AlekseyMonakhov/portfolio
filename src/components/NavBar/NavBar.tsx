@@ -116,7 +116,7 @@ const NavBar = () => {
                                     target={'_blank'}
                                     whileHover={{ y: -2 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className={`w-6`}
+                                    className={`w-6 text-light dark:text-dark`}
                                 >
                                     {link.icon}
                                 </motion.a>

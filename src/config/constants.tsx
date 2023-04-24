@@ -17,13 +17,7 @@ import articleLoading from '../../public/images/articles/create loading screen i
 import articleModal from '../../public/images/articles/create modal component in react using react portals.png'
 import smoothScroll from '../../public/images/articles/smooth scrolling in reactjs.png'
 import articleFormValidation from '../../public/images/articles/form validation in reactjs using custom react hook.png'
-import {
-    DribbbleIcon,
-    GithubIcon,
-    LinkedInIcon,
-    PinterestIcon,
-    TwitterIcon,
-} from '@/components/Icons'
+
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai"
 import {BsTelegram, BsFillTelephoneFill} from "react-icons/bs"
 import {GrMail} from "react-icons/gr"
@@ -227,23 +221,23 @@ export const articles: Array<FeatureArticleType | ArticleType> = [
 export const NavIcons:NavIcon[] = [
     {
         href: "https://t.me/leonidys_12",
-            icon: <BsTelegram size={24} style={{color: "#0088cc"}}/>,
+            icon: <BsTelegram size={24} />,
     },
     {
         href: "https://github.com/AlekseyMonakhov",
-        icon: <AiFillGithub  size={24} className={'dark:bg-dark rounded-full bg-light'}/>,
+        icon: <AiFillGithub  size={24} />,
     },
     {
         href: "https://www.linkedin.com/in/oleksii-monakhov-5b6116238/",
-        icon: <AiFillLinkedin size={24} style={{color: "#0e76a8"}}/>,
+        icon: <AiFillLinkedin size={24} />,
     },
     {
         href: "tel:+380957336963",
-        icon: <BsFillTelephoneFill size={24} style={{color: '#58E6D9'}}/>,
+        icon: <BsFillTelephoneFill size={24} />,
     },
     {
         href: "mailto:goshagriboedskii@gmail.com",
-        icon: <GrMail  size={24} style={{color: '#B63E96'}}/>,
+        icon: <GrMail  size={24} />,
     },
 ]
 //className={'text-base bg-light dark:bg-dark rounded-full'}
