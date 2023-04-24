@@ -14,7 +14,7 @@ const Footer = () => {
                     className={'underline underline-offset-2'}
                     href={'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/'}>Oleksii Monakhov</Link>
                 </div>
-                <Link href={'https://t.me/leonidys_12'} target={'_blank'}  className={'underline underline-offset-2'}>Say Hello</Link>
+                <Link href={'https://djinni.co/q/d331236a14/'} target={'_blank'}  className={'underline underline-offset-8'}>Djinni profile</Link>
             </Layout>
         </footer>
     )

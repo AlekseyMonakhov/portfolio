@@ -1,20 +1,13 @@
 import React, { useState } from 'react'
 import Logo from '@/components/Logo'
 import CustomLink from '@/components/NavBar/CustomLink'
-import {
-    DribbbleIcon,
-    GithubIcon,
-    LinkedInIcon,
-    MoonIcon,
-    PinterestIcon,
-    SunIcon,
-    TwitterIcon,
-} from '@/components/Icons'
+import { MoonIcon, SunIcon } from '@/components/Icons'
 
 import { AnimatePresence, motion } from 'framer-motion'
 import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 import { Modes } from '@/types'
 import CustomMobileLink from '@/components/NavBar/CustomMobileLink'
+import { NavIcons } from '@/config/constants'
 
 
 const NavBar = () => {
@@ -56,46 +49,19 @@ const NavBar = () => {
                 </nav>
 
                 <nav className={'flex items-center justify-center flex-wrap gap-3'}>
-                    <motion.a href={'https://twitter.com/'}
-                              target={'_blank'}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.9 }}
-                              className={'w-6'}
-                    >
-                        <TwitterIcon className={''} />
-                    </motion.a>
-                    <motion.a className={'w-6'}
-                              href={'https://github.com/'}
-                              target={'_blank'}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.9 }}
-                    >
-                        <GithubIcon className={'text-base'} />
-                    </motion.a>
-                    <motion.a className={'w-6'}
-                              href={'https://linkedin.com/'}
-                              target={'_blank'}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.9 }}
-                    >
-                        <LinkedInIcon className={''} />
-                    </motion.a>
-                    <motion.a className={'w-6 bg-light rounded-full'}
-                              href={'https://pinterest.com/'}
-                              target={'_blank'}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.9 }}
-                    >
-                        <PinterestIcon className={''} />
-                    </motion.a>
-                    <motion.a className={'w-6'}
-                              href={'https://twitter.com/'}
-                              target={'_blank'}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.9 }}
-                    >
-                        <DribbbleIcon className={''} />
-                    </motion.a>
+                    {NavIcons.map((link, index) => (
+                        <motion.a
+                            key={link.href + ' ' + index}
+                            href={link.href}
+                            target={'_blank'}
+                            whileHover={{ y: -2 }}
+                            whileTap={{ scale: 0.9 }}
+                            className={`w-6`}
+                        >
+                            {link.icon}
+                        </motion.a>
+                    ))}
+
 
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1 
@@ -142,47 +108,19 @@ const NavBar = () => {
 
                         <nav
                             className={'flex items-center justify-center flex-wrap gap-3 mt-2 sm:gap-1'}>
-                            <motion.a href={'https://twitter.com/'}
-                                      target={'_blank'}
-                                      whileHover={{ y: -2 }}
-                                      whileTap={{ scale: 0.9 }}
-                                      className={'w-6'}
-                            >
-                                <TwitterIcon className={''} />
-                            </motion.a>
-                            <motion.a className={'w-6'}
-                                      href={'https://github.com/AlekseyMonakhov'}
-                                      target={'_blank'}
-                                      whileHover={{ y: -2 }}
-                                      whileTap={{ scale: 0.9 }}
-                            >
-                                <GithubIcon
-                                    className={'text-base bg-light dark:bg-dark rounded-full'} />
-                            </motion.a>
-                            <motion.a className={'w-6'}
-                                      href={'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/'}
-                                      target={'_blank'}
-                                      whileHover={{ y: -2 }}
-                                      whileTap={{ scale: 0.9 }}
-                            >
-                                <LinkedInIcon className={''} />
-                            </motion.a>
-                            <motion.a className={'w-6 bg-light rounded-full'}
-                                      href={'https://pinterest.com/'}
-                                      target={'_blank'}
-                                      whileHover={{ y: -2 }}
-                                      whileTap={{ scale: 0.9 }}
-                            >
-                                <PinterestIcon className={''} />
-                            </motion.a>
-                            <motion.a className={'w-6'}
-                                      href={'https://twitter.com/'}
-                                      target={'_blank'}
-                                      whileHover={{ y: -2 }}
-                                      whileTap={{ scale: 0.9 }}
-                            >
-                                <DribbbleIcon className={''} />
-                            </motion.a>
+
+                            {NavIcons.map((link, index) => (
+                                <motion.a
+                                    key={link.href + ' ' + index}
+                                    href={link.href}
+                                    target={'_blank'}
+                                    whileHover={{ y: -2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className={`w-6`}
+                                >
+                                    {link.icon}
+                                </motion.a>
+                            ))}
 
                             <button
                                 className={`ml-3 flex items-center justify-center rounded-full p-1 

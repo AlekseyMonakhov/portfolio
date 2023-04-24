@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'
+import { ReactNode } from 'react'
 
 export type EducationItem = {
     type: string,
@@ -55,6 +56,11 @@ export interface ArticleType {
 
 export interface FeatureArticleType extends ArticleType {
     summary: string,
+}
+
+export type NavIcon = {
+    href: string,
+    icon: ReactNode,
 }
 
 
