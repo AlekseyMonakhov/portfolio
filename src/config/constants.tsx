@@ -48,8 +48,8 @@ export const user: User = {
     certificatesNumberField: 12,
     satisfiedClientsField: 50,
     yearsOfExperience: 2,
+    position: "Frontend Developer",
     userResume: '/Oleksii__Monakhov.pdf',
-    position: "Frontend Developer"
 }
 
 export const education: EducationItem[] = [
