@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import { user } from '@/config/constants'
 
 const Footer = () => {
     return (
@@ -11,10 +12,10 @@ const Footer = () => {
                     Build with
                     <span className={'text-primary dark:text-primaryDark text-2xl px-1'}>&#9825;</span> by&nbsp;<Link
                     target={'_blank'}
-                    className={'underline underline-offset-2'}
-                    href={'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/'}>Oleksii Monakhov</Link>
+                    className={'underline underline-offset-8'}
+                    href={'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/'}>{user.name + " " + user.lastName}</Link>
                 </div>
-                <Link href={'https://djinni.co/q/d331236a14/'} target={'_blank'}  className={'underline underline-offset-8'}>Djinni profile</Link>
+                <Link href={user.contacts.djinniProfile} target={'_blank'}  className={'underline underline-offset-8'}>Djinni profile</Link>
             </Layout>
         </footer>
     )

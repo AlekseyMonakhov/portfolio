@@ -4,9 +4,12 @@ import {
     EducationItem,
     Experience,
     FeatureArticleType,
-    FeatureProject, NavIcon,
+    FeatureProject,
+    NavIcon,
     ProjectType,
     ProjectTypes,
+    User,
+    UserSkill,
 } from '@/types'
 import crypto from '../../public/images/projects/crypto-screener-cover-image.jpg'
 import netflix from '../../public/images/projects/Netflix.png'
@@ -14,14 +17,40 @@ import threeJs from '../../public/images/projects/threeJs.png'
 import agency from '../../public/images/projects/agency-website-cover-image.jpg'
 import articlePagination from '../../public/images/articles/pagination component in reactjs.jpg'
 import articleLoading from '../../public/images/articles/create loading screen in react js.jpg'
-import articleModal from '../../public/images/articles/create modal component in react using react portals.png'
+import articleModal
+    from '../../public/images/articles/create modal component in react using react portals.png'
 import smoothScroll from '../../public/images/articles/smooth scrolling in reactjs.png'
-import articleFormValidation from '../../public/images/articles/form validation in reactjs using custom react hook.png'
+import articleFormValidation
+    from '../../public/images/articles/form validation in reactjs using custom react hook.png'
 
-import {AiFillLinkedin, AiFillGithub} from "react-icons/ai"
-import {BsTelegram, BsFillTelephoneFill} from "react-icons/bs"
-import {GrMail} from "react-icons/gr"
+import userPhoto from '../../public/images/profile/Frame.png'
+import mainScreenImg from '../../public/images/profile/developer-pic-1.png'
 
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { BsFillTelephoneFill, BsTelegram } from 'react-icons/bs'
+import { GrMail } from 'react-icons/gr'
+import React from 'react'
+
+
+export const user: User = {
+    name: 'Oleksiy',
+    lastName: 'Monakhov',
+    contacts: {
+        email: 'goshagriboedskii@gmail.com',
+        phone: '380957336963',
+        githubUrl: 'https://github.com/AlekseyMonakhov',
+        linkedinUrl: 'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/',
+        telegramProfileUrl: 'https://t.me/leonidys_12',
+        djinniProfile: 'https://djinni.co/q/d331236a14/',
+    },
+    userPhotoImg: userPhoto,
+    mainScreenImg: mainScreenImg,
+    certificatesNumberField: 12,
+    satisfiedClientsField: 50,
+    yearsOfExperience: 2,
+    userResume: '/Oleksii__Monakhov.pdf',
+    position: "Frontend Developer"
+}
 
 export const education: EducationItem[] = [
     {
@@ -177,7 +206,7 @@ export const articles: Array<FeatureArticleType | ArticleType> = [
         time: '9 min read',
         link: '',
         img: articlePagination,
-        type: ArticleTypes.FEATURE_ARTICLE
+        type: ArticleTypes.FEATURE_ARTICLE,
     },
     {
         title: 'Build A Custom Pagination Component In Reactjs From Scratch',
@@ -186,58 +215,123 @@ export const articles: Array<FeatureArticleType | ArticleType> = [
         time: '9 min read',
         link: '',
         img: articleLoading,
-        type: ArticleTypes.FEATURE_ARTICLE
+        type: ArticleTypes.FEATURE_ARTICLE,
     },
     {
         title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
         time: 'March 22 2023',
         link: '',
         img: articleModal,
-        type: ArticleTypes.ARTICLE
+        type: ArticleTypes.ARTICLE,
     },
     {
         title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
         time: 'March 22 2023',
         link: '',
         img: smoothScroll,
-        type: ArticleTypes.ARTICLE
+        type: ArticleTypes.ARTICLE,
     },
     {
         title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
         time: 'March 22 2023',
         link: '',
         img: articleFormValidation,
-        type: ArticleTypes.ARTICLE
+        type: ArticleTypes.ARTICLE,
     },
     {
         title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
         time: 'March 22 2023',
         link: '',
         img: articleModal,
-        type: ArticleTypes.ARTICLE
+        type: ArticleTypes.ARTICLE,
     },
 ]
 
-export const NavIcons:NavIcon[] = [
+export const NavIcons: NavIcon[] = [
     {
-        href: "https://t.me/leonidys_12",
-            icon: <BsTelegram size={24} />,
+        href: user.contacts.telegramProfileUrl,
+        icon: <BsTelegram size={24} />,
     },
     {
-        href: "https://github.com/AlekseyMonakhov",
-        icon: <AiFillGithub  size={24} />,
+        href: user.contacts.githubUrl,
+        icon: <AiFillGithub size={24} />,
     },
     {
-        href: "https://www.linkedin.com/in/oleksii-monakhov-5b6116238/",
+        href: user.contacts.linkedinUrl,
         icon: <AiFillLinkedin size={24} />,
     },
     {
-        href: "tel:+380957336963",
+        href: `tel:${user.contacts.phone}`,
         icon: <BsFillTelephoneFill size={24} />,
     },
     {
-        href: "mailto:goshagriboedskii@gmail.com",
-        icon: <GrMail  size={24} />,
+        href: `mailto:${user.contacts.email}`,
+        icon: <GrMail size={24} />,
     },
 ]
-//className={'text-base bg-light dark:bg-dark rounded-full'}
+
+export const userSkills: UserSkill[] = [
+    {
+        name: 'CSS',
+        position: {
+            x: 20,
+            y: 0,
+        },
+    },
+    {
+        name: 'Javascript',
+        position: {
+            x: 20,
+            y: 15,
+        },
+    },
+    {
+        name: 'Typescript',
+        position: {
+            x: 0,
+            y: 12,
+        },
+    },
+    {
+        name: 'React',
+        position: {
+            x: -20,
+            y: -15,
+        },
+    },
+    {
+        name: 'NextJS',
+        position: {
+            x: 15,
+            y: -20,
+        },
+    },
+    {
+        name: 'NodeJS',
+        position: {
+            x: 25,
+            y: -15,
+        },
+    },
+    {
+        name: 'REST/GraphQL',
+        position: {
+            x: -5,
+            y: -10,
+        },
+    },
+    {
+        name: 'MongoDB',
+        position: {
+            x: -25,
+            y: 10,
+        },
+    },
+    {
+        name: 'Tailwind CSS',
+        position: {
+            x: -15,
+            y: 18,
+        },
+    },
+]

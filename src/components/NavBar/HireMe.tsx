@@ -1,7 +1,7 @@
 import React from 'react'
 import { CircularText } from '@/components/Icons'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { user } from '@/config/constants'
 
 const HireMe = () => {
 
@@ -9,7 +9,7 @@ const HireMe = () => {
         <div className={'fixed left-4 bottom-4 flex items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0 z-10'}>
             <div className={'w-48 h-auto flex items-center justify-center relative md:w-24'} >
                 <CircularText className={'fill-dark animate-spin-slow dark:fill-light'} />
-                <Link href={'mailto:goshagriboedskii@gmail.com'}
+                <Link href={`mailto:${user.contacts.email}`}
 
                       className={'flex items-center justify-center ' +
                           'absolute left-1/2 top-1/2 -translate-x-1/2 ' +

@@ -42,7 +42,7 @@ const FeaturedProject: FC<FeatureProject> = ({
                 <div className={'w-full flex-1 cursor-pointer overflow-hidden rounded-lg'}>
                     <Image src={img} alt={title} className={'w-full h-auto'} />
                     <div
-                        className={'absolute z-10 top-0 left-0 flex justify-center items-center w-full h-full bg-dark/70 rounded-[1.3rem]'}>
+                        className={'absolute z-10 top-0 left-0 flex justify-center items-center w-full h-full bg-dark/70 rounded-[1.3rem] sm:rounded-[.9rem]'}>
                         <h3 className={'text-light text-6xl font-bold selection:bg-red-500 selection:underline lg:text-3xl md:text-2xl'}>In
                             Process</h3>
                     </div>

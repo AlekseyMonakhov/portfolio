@@ -59,8 +59,37 @@ export interface FeatureArticleType extends ArticleType {
 }
 
 export type NavIcon = {
-    href: string,
+    href: UserContacts[keyof UserContacts],
     icon: ReactNode,
 }
 
+export interface User {
+    name: string,
+    lastName: string,
+    contacts: UserContacts,
+    userPhotoImg:StaticImageData,
+    mainScreenImg:StaticImageData,
+    satisfiedClientsField: number,
+    certificatesNumberField: number,
+    yearsOfExperience:number,
+    userResume: string,
+    position: string
+}
+
+interface UserContacts {
+    email: string,
+    phone: string,
+    linkedinUrl: string,
+    githubUrl:string,
+    telegramProfileUrl: string,
+    djinniProfile: string
+}
+
+export interface UserSkill {
+    name: string,
+    position: {
+        x: number,
+        y: number
+    }
+}
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
+import { user } from '@/config/constants'
 
 const MotionLink = motion(Link);
 
@@ -17,7 +18,7 @@ const Logo = () => {
                 }}
                 href={'/'}
                 className={'w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light'}
-            >OM</MotionLink>
+            >{user.name.split("")[0] + user.lastName.split("")[0]}</MotionLink>
         </div>
     )
 }

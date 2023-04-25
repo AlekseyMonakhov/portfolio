@@ -8,6 +8,7 @@ import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/NavBar/HireMe'
 import lightBulb from '../../public//images/svgs/miscellaneous_icons_1.svg'
 import TransitionEffect from '@/components/TransitionEffect'
+import { user } from '@/config/constants'
 
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
                             <div className={'flex items-center self-start mt-2 lg:self-center'}>
                                 <Link
                                     download={true}
-                                    href={'/Oleksii__Monakhov.pdf'}
+                                    href={user.userResume}
                                     target={'_blank'}
                                     className={'flex items-center bg-dark text-light p-2.5' +
                                         ' px-6 rounded-lg text-lg font-semibold hover:bg-light' +
@@ -54,7 +55,7 @@ export default function Home() {
                                 >
                                     Resume <LinkArrow className={'w-6 ml-1'} />
                                 </Link>
-                                <Link href={'mailto:goshagriboedskii@gmail.com'}
+                                <Link href={`mailto:${user.contacts.email}`}
                                       className={'ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'}
                                       target={'_blank'}>Contact</Link>
                             </div>
@@ -65,7 +66,7 @@ export default function Home() {
                 <HireMe />
 
                 <div className={'absolute right-8 bottom-8 inline-block w-24 md:hidden'}>
-                    <Image src={lightBulb} alt={'Aleksey'} className={'w-full h-auto'} />
+                        <Image src={lightBulb} alt={'image'} className={'w-full h-auto'} />
                 </div>
             </main>
         </>
