@@ -12,6 +12,8 @@ import {
     UserSkill,
 } from '@/types'
 import crypto from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import viar from '../../public/images/projects/viar.jpg'
+import tibica from '../../public/images/projects/tibica.jpg'
 import netflix from '../../public/images/projects/Netflix.png'
 import threeJs from '../../public/images/projects/threeJs.png'
 import agency from '../../public/images/projects/agency-website-cover-image.jpg'
@@ -40,7 +42,7 @@ export const user: User = {
         phone: '380957336963',
         githubUrl: 'https://github.com/AlekseyMonakhov',
         linkedinUrl: 'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/',
-        telegramProfileUrl: 'https://t.me/leonidys_12',
+        telegramProfileUrl: 'https://t.me/AlekseyMonakhov',
         djinniProfile: 'https://djinni.co/q/d331236a14/',
     },
     userPhotoImg: userPhoto,
@@ -48,7 +50,7 @@ export const user: User = {
     certificatesNumberField: 12,
     satisfiedClientsField: 50,
     yearsOfExperience: 2,
-    position: "Frontend Developer",
+    position: "Web Developer",
     userResume: '/Oleksii__Monakhov.pdf',
 }
 
@@ -135,6 +137,76 @@ export const education: EducationItem[] = [
         diplomaLink: 'https://www.udemy.com/certificate/UC-4fadbde6-069c-4d94-8d9d-fb27954ebfad/',
         schoolName: 'Udemy',
     },
+    {
+        type: 'NestJS: The Complete Developer\'s Guide (Oct 2023)',
+        info: 'Master NestJS, the Node framework that makes building enterprise-grade, scalable NodeJS apps a breeze!',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-05507569-2230-426a-8be5-b434090d4f7e/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Next.js by Example (Oct 2023)',
+        info: 'Learn Next.js 13.4+ version from the ground up by building production-ready, fullstack ReactJS apps with NextJS',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-3d5394ca-c5a7-4235-9091-f93efd089e98/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Microfrontends with React: A Complete Developer\'s Guide (Sep 2023)',
+        info: 'Build incredibly scalable apps with a microfrontend architecture. Learn how to use Module Federation with ReactJS',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-597681c8-328e-4f0c-8263-f2dcb612b792/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'MongoDB - The Complete Developer\'s Guide 2023 (Aug 2023)\n',
+        info: 'Master MongoDB Development for Web & Mobile Apps. CRUD Operations, Indexes, Aggregation Framework - All about MongoDB!',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-2138d1ef-4640-44e8-b54b-316371765147/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Regular Expressions for Beginners and Beyond! With Exercises (Jul 2023)\n',
+        info: 'Learn Regular Expressions (Regex) for Javascript Python PHP PERL Ruby Unix etc with Exercises Step by Step and Easy way',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-5d03cb7e-e13e-453b-88d5-8b7b28bf260b/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Remix.js - The Practical Guide (Jul 2023)',
+        info: 'Learn Remix.js from the ground up by building a fullstack app with Remix, React, Prisma, and PostgreSQL',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-a268fdd1-9d73-47db-b486-494b7a5b80f6/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Progressive Web Apps (PWA) - The Complete Guide (Jun 2023)',
+        info: 'Build a Progressive Web App (PWA) that feels like an iOS & Android App, using Device Camera, Push Notifications and more',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-cc7cb7b0-729f-43ed-a5ac-e95fbff0aba6/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'React Testing Library and Jest: The Complete Guide (Jun 2023)',
+        info: 'Master React Testing Library and Jest to build bulletproof React apps with confidence',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-18d96576-50ec-41d3-89db-85357eed3a9e//',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'GraphQL by Example (May 2023)',
+        info: 'Learn GraphQL by writing full-stack JavaScript applications with Node.js, Express, Apollo Server, React, Apollo Client',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-ded78f8b-1486-4057-9f9a-553ad9190cc2/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'C#',
+        info: 'C# is a modern, general-purpose, object-oriented programming language developed by Microsoft and approved by European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# was developed by Anders Hejlsberg and his team during the development of .Net Framework. C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures.',
+        time: '2023',
+        diplomaLink: 'https://certificate.ithillel.ua/view/21808156',
+        schoolName: 'Hillel it School',
+    },
 ]
 
 export const experience: Experience[] = [
@@ -154,6 +226,14 @@ export const experience: Experience[] = [
         companyLink: 'https://perfsys.com/',
         work: 'Creating user interfaces, landing pages, CRM systems, working with graphics, animations, working with React, Typescript, ReactQuery, RtkQuery, SWR',
         position: 'Front-end Developer',
+    },
+    {
+        time: '2023-now',
+        address: 'Kishinev',
+        company: 'Perfsys',
+        companyLink: 'https://perfsys.com/',
+        work: 'Upgraded Nextjs version from 12.2 to 13.4. Migrated from css/scss to storybook on project. Implemented Microfrontend architecture on project using Module Federation.',
+        position: 'FullStack Developer',
     },
 ]
 
@@ -179,21 +259,19 @@ export const projects: Array<FeatureProject | ProjectType> = [
     },
     {
         type: ProjectTypes.PROJECT,
-        img: crypto,
-        link: '',
+        img: tibica,
+        link: 'https://tibica.io/',
         githubLink: '',
-        title: 'Crypto Screener Application',
-        done: false,
+        title: 'Tibica',
+        done: true,
     },
     {
-        type: ProjectTypes.FEATURE_PROJECT,
-        img: agency,
-        link: '',
+        type: ProjectTypes.PROJECT,
+        img: viar,
+        link: 'https://viar.live/',
         githubLink: '',
-        title: 'Agency Website',
-        summary: 'Clone of netflix, technologies used: \n' +
-            'Tailwind, Nextjs, Typescript, SWR, framer-motion, axios, zustand, next-auth, react-hook-form',
-        done: false,
+        title: 'Viar-Live',
+        done: true,
     },
 ]
 
