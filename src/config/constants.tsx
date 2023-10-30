@@ -49,7 +49,7 @@ export const user: User = {
     mainScreenImg: mainScreenImg,
     certificatesNumberField: 12,
     satisfiedClientsField: 50,
-    yearsOfExperience: 2,
+    yearsOfExperience: 3,
     position: "Web Developer",
     userResume: '/Oleksii__Monakhov.pdf',
 }
