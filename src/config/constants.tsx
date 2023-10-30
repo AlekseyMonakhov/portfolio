@@ -230,10 +230,10 @@ export const experience: Experience[] = [
     {
         time: '2023-now',
         address: 'Kishinev',
-        company: 'Perfsys',
+        company: 'Fusion Works',
         companyLink: 'https://perfsys.com/',
         work: 'Upgraded Nextjs version from 12.2 to 13.4. Migrated from css/scss to storybook on project. Implemented Microfrontend architecture on project using Module Federation.',
-        position: 'FullStack Developer',
+        position: 'Full Stack Developer',
     },
 ]
 
