@@ -43,15 +43,15 @@ export const user: User = {
         githubUrl: 'https://github.com/AlekseyMonakhov',
         linkedinUrl: 'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/',
         telegramProfileUrl: 'https://t.me/AlekseyMonakhov',
-        djinniProfile: 'https://djinni.co/q/d331236a14/',
+        djinniProfile: 'https://djinni.co/q/126eea7be4/',
     },
     userPhotoImg: userPhoto,
     mainScreenImg: mainScreenImg,
     certificatesNumberField: 12,
     satisfiedClientsField: 50,
-    yearsOfExperience: 3,
+    yearsOfExperience: 5,
     position: "Web Developer",
-    userResume: '/Oleksii__Monakhov.pdf',
+    userResume: './Oleksii__Monakhov.pdf',
 }
 
 export const education: EducationItem[] = [
@@ -201,15 +201,45 @@ export const education: EducationItem[] = [
         schoolName: 'Udemy',
     },
     {
+        type: 'Typescript',
+        info: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open source.',
+        time: '2023',
+        diplomaLink: 'https://certificate.ithillel.ua/view/29451718',
+        schoolName: 'Hillel it School',
+    },
+    {
         type: 'C#',
         info: 'C# is a modern, general-purpose, object-oriented programming language developed by Microsoft and approved by European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# was developed by Anders Hejlsberg and his team during the development of .Net Framework. C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures.',
         time: '2023',
         diplomaLink: 'https://certificate.ithillel.ua/view/21808156',
         schoolName: 'Hillel it School',
     },
+    {
+        type: 'RxJS',
+        info: 'RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code. This project is a rewrite of Reactive-Extensions/RxJS with better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface.',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-6925438c-8b7d-455a-be67-fa4fa0b3c69e/',
+        schoolName: 'Udemy',
+    },
+    {
+        type: 'Testing Nextjs with Jest, React Testing Library and Cypress (Apr 2023)',
+        info: 'Learn how to test Next.js applications using Jest, React Testing Library and Cypress',
+        time: '2023',
+        diplomaLink: 'https://www.udemy.com/certificate/UC-49da7591-33a2-4319-a87a-eaf9c27fbf33/',
+        schoolName: 'Udemy',
+    }
 ]
 
 export const experience: Experience[] = [
+    {
+        time: '2019-2021',
+        address: 'Odesa',
+        company: 'NDA',
+        companyLink: '',
+        work: '\n' +
+            'Developed user interfaces, basic API integration, and responsive layouts. Initial steps in professional development with practical application of HTML, CSS, and React.',
+        position: 'Front-end Developer',
+    },
     {
         time: '2021-2022',
         address: 'Odesa',
@@ -278,48 +308,46 @@ export const projects: Array<FeatureProject | ProjectType> = [
 
 export const articles: Array<FeatureArticleType | ArticleType> = [
     {
-        title: 'Build A Custom Pagination Component In Reactjs From Scratch',
-        summary: 'Learn how to build a custom pagination component in ReactJS from scratch.\n' +
-            '    Follow this step-by-step guide to integrate Pagination component in your ReactJS project.',
+        title: 'How animation works in browsers',
+        summary: 'In this article, I will tell you how animation works in browsers, what types of animation exist, and how to use them in your projects.',
         time: '9 min read',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%94-%D0%B0%D0%BD%D1%96%D0%BC%D0%B0%D1%86%D1%96%D1%8F-%D0%BC%D0%B8-%D0%B2-%D0%BC%D0%B8%D0%BD%D1%83%D0%BB%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE%D0%BF%D0%B8%D1%81%D1%96-activity-7133052162313469953-d14v?utm_source=share&utm_medium=member_desktop',
         img: articlePagination,
         type: ArticleTypes.FEATURE_ARTICLE,
     },
     {
-        title: 'Build A Custom Pagination Component In Reactjs From Scratch',
-        summary: 'Learn how to build a custom pagination component in ReactJS from scratch.\n' +
-            '    Follow this step-by-step guide to integrate Pagination component in your ReactJS project.',
+        title: 'How browsers render a website',
+        summary: 'In this article, I will tell you how browsers render a website, what stages of rendering exist, and how to use them in your projects.',
         time: '9 min read',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%8F%D0%BA-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80-%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D1%83-1-%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-activity-7132350608119934976-jbGA?utm_source=share&utm_medium=member_desktop',
         img: articleLoading,
         type: ArticleTypes.FEATURE_ARTICLE,
     },
     {
-        title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
+        title: 'How Js works in browsers',
         time: 'March 22 2023',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%94-%D0%B4%D0%B6%D0%B0%D0%B2%D0%B0%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82-%D1%83-%D0%BC%D0%B8%D0%BD%D1%83%D0%BB%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE%D0%BF%D0%B8%D1%81%D1%96-activity-7130903110645911554-U-4p?utm_source=share&utm_medium=member_desktop',
         img: articleModal,
         type: ArticleTypes.ARTICLE,
     },
     {
-        title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
+        title: 'What is compilation and interpretation',
         time: 'March 22 2023',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D1%96%D0%BB%D1%8F%D1%86%D1%96%D1%8F-%D1%82%D0%B0-%D1%96%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%86%D1%96%D1%8F-activity-7130548373857681410-ReQR?utm_source=share&utm_medium=member_desktop',
         img: smoothScroll,
         type: ArticleTypes.ARTICLE,
     },
     {
-        title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
+        title: 'What is this in js',
         time: 'March 22 2023',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-this-%D1%86%D0%B5-%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BD%D0%B0-%D0%B7%D0%BE%D0%B2%D0%BD%D1%96%D1%88%D0%BD%D1%94-activity-7129567870149087232-4Sn5?utm_source=share&utm_medium=member_desktop',
         img: articleFormValidation,
         type: ArticleTypes.ARTICLE,
     },
     {
-        title: 'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
+        title: 'How to initialize variables in js',
         time: 'March 22 2023',
-        link: '',
+        link: 'https://www.linkedin.com/posts/oleksii-monakhov-5b6116238_%D1%8F%D0%BA%D1%96-%D1%94-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B8-%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%BC%D1%96%D0%BD%D0%BD%D0%BE%D1%97-%D0%B7%D1%83%D1%81%D1%82%D1%80%D1%96%D1%87%D0%B0%D0%B2-activity-7127327652603936769-O_Nm?utm_source=share&utm_medium=member_desktop',
         img: articleModal,
         type: ArticleTypes.ARTICLE,
     },
