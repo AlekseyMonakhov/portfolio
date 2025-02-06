@@ -232,21 +232,12 @@ export const education: EducationItem[] = [
 
 export const experience: Experience[] = [
     {
-        time: '2019-2021',
-        address: 'Odesa',
-        company: 'NDA',
-        companyLink: '',
-        work: '\n' +
-            'Developed user interfaces, basic API integration, and responsive layouts. Initial steps in professional development with practical application of HTML, CSS, and React.',
-        position: 'Front-end Developer',
-    },
-    {
-        time: '2021-2022',
+        time: '2020-2022',
         address: 'Odesa',
         company: 'Iambloom',
         companyLink: 'https://iambloom.com.ua/',
         work: '\n' +
-            'Development of client interfaces, designing page design, working with animation, setting up API integration with Google and Facebook. Actively used Html, CSS, JS, React',
+            'Development of client interfaces, designing page design, working with animations',
         position: 'Front-end Developer',
     },
     {
@@ -258,11 +249,19 @@ export const experience: Experience[] = [
         position: 'Front-end Developer',
     },
     {
-        time: '2023-now',
+        time: '2023-2024',
         address: 'Kishinev',
         company: 'Fusion Works',
-        companyLink: 'https://perfsys.com/',
-        work: 'Upgraded Nextjs version from 12.2 to 13.4. Migrated from css/scss to storybook on project. Implemented Microfrontend architecture on project using Module Federation.',
+        companyLink: 'https://fusion.works/',
+        work: 'Upgraded Nextjs version from 12.2 to 13.4. Migrated from css/scss to storybook on project. Implemented Microfrontend architecture on project using Module Federation. Worked with React, Vue, Sevlte in microfrontend architecture.',
+        position: 'Full Stack Developer',
+    },
+    {
+        time: '2024-now',
+        address: 'Remote',
+        company: 'Playtech',
+        companyLink: 'https://www.playtech.com/',
+        work: 'Upgraded React version from 16.1 to 18.3. Rewritting project to MUI components. Moved From React router 5.2 to 6.4 approach. Upgraded http1.1 to http2 between microservices and fronted and balancer. Optimized db perfomance by creating indexes and bring Redis as a cache layer. Using Redis as event bus for microservices(Redis Streams). Code refactor and perf optimization.',
         position: 'Full Stack Developer',
     },
 ]
