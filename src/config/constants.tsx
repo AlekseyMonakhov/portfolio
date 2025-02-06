@@ -237,7 +237,7 @@ export const experience: Experience[] = [
         company: 'Iambloom',
         companyLink: 'https://iambloom.com.ua/',
         work: '\n' +
-            'Development of client interfaces, designing page design, working with animations',
+            'Development of client interfaces, designing page design, working with animations, creating CRM systems, working with React, Typescript, Redux for building CRM system. Creating perfomant frontend applications.',
         position: 'Front-end Developer',
     },
     {
