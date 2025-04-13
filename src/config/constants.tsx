@@ -41,8 +41,8 @@ export const user: User = {
         email: 'goshagriboedskii@gmail.com',
         phone: '380957336963',
         githubUrl: 'https://github.com/AlekseyMonakhov',
-        linkedinUrl: 'https://www.linkedin.com/in/oleksii-monakhov-5b6116238/',
-        telegramProfileUrl: 'https://t.me/AlekseyMonakhov',
+        linkedinUrl: 'https://www.linkedin.com/in/alex-monakhov-5b6116238/',
+        telegramProfileUrl: 'https://t.me/Oleskyi',
         djinniProfile: 'https://djinni.co/q/126eea7be4/',
     },
     userPhotoImg: userPhoto,
@@ -50,7 +50,7 @@ export const user: User = {
     certificatesNumberField: 12,
     satisfiedClientsField: 50,
     yearsOfExperience: 5,
-    position: "Web Developer",
+    position: "Full Stack Developer",
     userResume: './Oleksii__Monakhov.pdf',
 }
 
